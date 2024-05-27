@@ -3,6 +3,7 @@ import Button from "./components/Button";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
+import Benefits from "./components/Benefits";
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header className="mt-10">Button Text</Header>
         <Hero />
-
+        <Benefits />
         <Footer />
       </div>
       <ButtonGradient />
