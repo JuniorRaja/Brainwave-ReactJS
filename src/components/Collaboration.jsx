@@ -1,8 +1,9 @@
 import React from "react";
 import Section from "./Section";
-import { collabContent, collabText } from "../constants";
+import { collabApps, collabContent, collabText } from "../constants";
 import { brainwaveSymbol, check } from "../assets";
 import Button from "../components/Button";
+import { LeftCurve, RightCurve } from "./design/Collaboration";
 
 const Collaboration = () => {
   return (
@@ -30,7 +31,7 @@ const Collaboration = () => {
         </div>
 
         <div className="lg:ml-auto xl:w-[38rem] mt-4">
-          <p className="body-2 text-n-4 mb-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
+          <p className="body-2 text-n-4 mb-8 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
             {collabText}
           </p>
           {/* Round with CSS */}
@@ -50,6 +51,32 @@ const Collaboration = () => {
                 </div>
               </div>
             </div>
+            <ul>
+              {collabApps.map((app, idx) => (
+                <li
+                  key={app.id}
+                  className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${
+                    idx * 45
+                  }`}
+                >
+                  <div
+                    className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${
+                      idx * 45
+                    }`}
+                  >
+                    <img
+                      src={app.icon}
+                      className="m-auto"
+                      width={app.width}
+                      height={app.height}
+                      alt={app.title}
+                    />
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <LeftCurve />
+            <RightCurve />
           </div>
         </div>
       </div>
