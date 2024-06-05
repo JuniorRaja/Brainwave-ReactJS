@@ -6,7 +6,7 @@ import { LeftLine, RightLine } from "./design/Pricing";
 
 const Pricing = () => {
   return (
-    <Section className="overflow-hidden" id="pricing">
+    <Section classNames="overflow-hidden" id="pricing" crosses>
       <div className="container relative z-2">
         <div className="hidden relative lg:flex justify-center mb-[6.5rem]">
           <img
