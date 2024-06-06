@@ -44,18 +44,18 @@ export const navigation = [
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "#pricing",
-  },
-  {
-    id: "2",
     title: "How to use",
     url: "#how-to-use",
   },
   {
-    id: "3",
+    id: "2",
     title: "Roadmap",
     url: "#roadmap",
+  },
+  {
+    id: "3",
+    title: "Pricing",
+    url: "#pricing",
   },
   {
     id: "4",

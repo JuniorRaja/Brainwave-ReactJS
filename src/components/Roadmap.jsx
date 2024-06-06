@@ -7,7 +7,7 @@ import Tagline from "./Tagline";
 
 const Roadmap = () => {
   return (
-    <Section classNames="overflow-hidden" id="Roadmap" crosses>
+    <Section classNames="overflow-hidden" id="roadmap" crosses>
       <div className="container md:pb-10">
         <Heading tag="Ready to get started" title="What we're working on" />
 
